@@ -144,7 +144,8 @@ header section ul li:first-child {
 }
 
 .hero-background {
-  background: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/herobackground/effectivesolutions.jpg);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/herobackground/effectivesolutions.jpg);
   background-repeat: no-repeat;
   height: 600px;
   display: flex;
@@ -413,7 +414,7 @@ li:last-child button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-margin-left: 70px;
+  margin-left: 70px;
 }
 .social-media-list-items {
   display: flex;
