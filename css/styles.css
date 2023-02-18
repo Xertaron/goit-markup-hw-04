@@ -145,9 +145,8 @@ header section ul li:first-child {
 }
 
 .hero-background {
-  background: url(../images/herobackground/effectivesolutions.jpg),
-    var(--hero-background);
-  background-blend-mode: overlay;
+  background:url(../images/herobackground/effectivesolutions.jpg);
+  
   height: 600px;
   display: flex;
   align-items: center;
