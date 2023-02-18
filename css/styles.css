@@ -178,16 +178,40 @@ button:active {
   color: white;
 }
 
-.social-media-team:hover,
-.social-media-team:focus,
-.social-media-team:active {
-  
+.social-media-item:hover,
+.social-media-item:focus,
+.social-media-item:active,
+.social-media-item-footer:hover,
+.social-media-item-footer:focus,
+.social-media-item-footer:active {
   border-radius: 50%;
-  --color4:white;
-  background-color:var(--brand-color);
-  
-  
+  --color4: white;
+  background-color: var(--brand-color);
+  cursor: pointer;
 }
+.our-clients-icon:hover,
+.our-clients-icon:focus,
+.our-clients-icon:active {
+  --color2: var(--brand-color);
+  --color4: var(--brand-color);
+  border-color: var(--brand-color);
+  cursor: pointer;
+}
+.portfolio-select:hover,
+.portfolio-select:focus,
+.portfolio-select:active {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.portfolio-main-item:hover,
+.portfolio-main-item:focus,
+.portfolio-main-item:active {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+
 /*Main*/
 .background-main {
   background-color: white;
@@ -311,16 +335,42 @@ li:last-child button {
 
   border-radius: 0px 0px 4px 4px;
 }
-.social-media-team {
- 
-  margin-right:10px; 
-  margin-bottom:30px;
- border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    padding: 12px;
+.social-media-list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
 }
-.social-media-team:last-child {margin-right: 0;}
+.social-media-item {
+  margin-bottom: 30px;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-media-item:last-child {
+  padding-right: 0;
+}
+.our-clients {
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.our-clients-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.our-clients-icon {
+  width: 170px;
+  height: 92px;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*Footer*/
 .spacing-footer {
   padding-top: 60px;
@@ -329,8 +379,13 @@ li:last-child button {
 .background-footer {
   height: 252px;
   background-color: var(--background-color);
-  display: grid;
+  display: flex;
 }
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .info-footer {
   color: var(--info-footer-color);
   text-decoration: none;
@@ -345,4 +400,41 @@ li:last-child button {
   line-height: 1.71;
   color: white;
   font-style: normal;
+}
+.social-media-list-footer {
+  width: 206px;
+  height: 80px;
+  margin-top: 95px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: 70px;
+}
+.social-media-list-items {
+  display: flex;
+  padding-left: 0;
+  justify-content: space-between;
+}
+.social-media-item-footer {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 10%);
+}
+.social-media-item-footer:last-child {
+  padding-right: 0;
+}
+
+.social-media-list-items:last-child {
+  padding-right: 0;
+}
+.join-us {
+  font-weight: 700;
+  color: white;
+  margin: 0;
 }
