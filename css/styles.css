@@ -17,7 +17,6 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--text-color);
   font-size: 14px;
-  width: 1600px;
   margin: auto;
   background-color: #e5e5e5;
 }
@@ -66,7 +65,7 @@ stronie nie ułożą się tak jak trzeba.*/
   height: 80px;
   border: #ececec 1px solid;
   background-color: white;
-  display: inline-flex;
+  display: flex;
   align-items: center;
 }
 nav {
@@ -145,8 +144,8 @@ header section ul li:first-child {
 }
 
 .hero-background {
-  background:url(../images/herobackground/effectivesolutions.jpg);
-  
+  background: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/herobackground/effectivesolutions.jpg);
+  background-repeat: no-repeat;
   height: 600px;
   display: flex;
   align-items: center;
@@ -192,6 +191,7 @@ button:active {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-color: white;
   --color4: var(--icon-color);
+  border-radius: 50%;
 }
 .our-clients-icon:hover,
 .our-clients-icon:focus,
@@ -413,13 +413,15 @@ li:last-child button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  margin-left: 70px;
+margin-left: 70px;
 }
 .social-media-list-items {
   display: flex;
   padding-left: 0;
   justify-content: space-between;
+}
+.social-media-list-items:last-child {
+  padding-right: 0;
 }
 .social-media-item-footer {
   height: 44px;
@@ -433,12 +435,9 @@ li:last-child button {
 .social-media-item-footer:last-child {
   padding-right: 0;
 }
-
-.social-media-list-items:last-child {
-  padding-right: 0;
-}
 .join-us {
   font-weight: 700;
   color: white;
   margin: 0;
+  text-transform: uppercase;
 }
