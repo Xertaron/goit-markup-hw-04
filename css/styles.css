@@ -11,6 +11,7 @@
   --info-color: rgb(117, 117, 117, 100%);
   --info-footer-color: rgb(255, 255, 255, 60%);
   --group-color: rgb(245, 244, 250, 100%);
+  --icon-color: rgb(175, 177, 184, 100%);
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -144,7 +145,7 @@ header section ul li:first-child {
 }
 
 .hero-background {
-  background: url(/images/herobackground/effectivesolutions.jpg),
+  background: url(../images/herobackground/effectivesolutions.jpg),
     var(--hero-background);
   background-blend-mode: overlay;
   height: 600px;
@@ -180,7 +181,6 @@ button:active {
 
 .social-media-item:hover,
 .social-media-item:focus,
-.social-media-item:active,
 .social-media-item-footer:hover,
 .social-media-item-footer:focus,
 .social-media-item-footer:active {
@@ -188,6 +188,11 @@ button:active {
   --color4: white;
   background-color: var(--brand-color);
   cursor: pointer;
+}
+.social-media-item:active {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: white;
+  --color4: var(--icon-color);
 }
 .our-clients-icon:hover,
 .our-clients-icon:focus,
@@ -209,7 +214,7 @@ button:active {
 .portfolio-main-item:active {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /*Main*/
