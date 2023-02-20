@@ -146,8 +146,7 @@ header section ul li:first-child {
 .hero-background {
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/herobackground/effectivesolutions.jpg);
-  background-repeat: no-repeat;
-  background-position-x: center;
+  background-size: cover;
   height: 600px;
   display: flex;
   align-items: center;
